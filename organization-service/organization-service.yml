@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+example:
+  property: testing
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka
+  instance:
+    instance-id: ${spring.application.name}:${instanceId:${random.value}}
