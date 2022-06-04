@@ -6,9 +6,11 @@ spring:
     driverClassName: org.h2.Driver
     username: sa
     password:
-    ddl-auto: create
+    ddl-auto: none
   jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: none
   h2:
     console:
       enabled: true
