@@ -1,17 +1,9 @@
 server:
-  port: 8081
+  port: 8080
 spring:
-  datasource:
-    url: jdbc:h2:tcp://localhost:9090/mem:mydb
-    driverClassName: org.h2.Driver
-    username: sa
-    password:
-    ddl-auto: none
   jpa:
     show-sql: true
   h2:
-    hibernate:
-      ddl-auto: none
     console:
       enabled: true
 
