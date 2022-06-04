@@ -1,6 +1,12 @@
 server:
   port: 8080
 spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+    ddl-auto: create
   jpa:
     show-sql: true
   h2:
